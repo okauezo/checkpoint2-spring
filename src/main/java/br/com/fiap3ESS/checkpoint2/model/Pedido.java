@@ -15,13 +15,43 @@ public class Pedido {
 
     @NotBlank(message = "Nome do cliente é obrigatorio")
     @Column(nullable = false)
-    private String ClienteNome;
+    private String clienteNome;
 
-    @Column(Nullable = false)
-    private LocalDate datapedido;
+    @Column(nullable = false)
+    private LocalDate dataPedido;
 
     @PositiveOrZero(message = "Valor não pode ser negativo")
     @Column(nullable = false)
     private Double valorTotal;
 
-    PrePersist
+    @PrePersist
+    public void prePersist() {
+        this.dataPedido = LocalDate.now();
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getClienteNome() {
+        return clienteNome;
+    }
+
+    public void setClienteNome(String clienteNome) {
+        this.clienteNome = clienteNome;
+    }
+
+    public LocalDate getDataPedido() {
+        return dataPedido;
+    }
+
+    public double getValorTotal() {
+        return valorTotal;
+    }
+
+    public void setValorTotal(double valorTotal) {
+        this.valorTotal = valorTotal;
+    }
+}
+
+
