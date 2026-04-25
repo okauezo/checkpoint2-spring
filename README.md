@@ -4,6 +4,7 @@ Kauê Pires Moreira — RM 554403
 Ricardo Di Tilia — RM 555155
 Eric Yuji Ito — RM 554869
 Higor Batista — RM 558907
+Bento Rangel da Silva — RM 559124
 
  Descrição do Projeto
 
@@ -59,18 +60,18 @@ User: sa
 Password: ()
 ⚙️ Como Executar o Projeto
 Clonar o repositório:
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone (https://github.com/okauezo/checkpoint2-spring/tree/main).git
 Abrir na IDE (IntelliJ ou VS Code)
 Rodar a aplicação:
 mvn spring-boot:run
 A API estará disponível em:
 http://localhost:8080
-🧠 Observações
+ Observações
 O ID do pedido é gerado automaticamente.
 A data do pedido é preenchida automaticamente no momento da criação.
 O campo clienteNome é obrigatório.
 O valorTotal não pode ser negativo.
-📌 Status
+ Status
 
 ✅ Projeto finalizado
 ✅ CRUD completo funcionando
@@ -78,4 +79,4 @@ O valorTotal não pode ser negativo.
 
 🔗 Link do Repositório
 
-(cole aqui o link do GitHub antes de entregar)
+(https://github.com/okauezo/checkpoint2-spring/tree/main)
