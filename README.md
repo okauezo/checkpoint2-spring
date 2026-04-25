@@ -1,12 +1,12 @@
 Checkpoint 2 - API de Pedidos (Spring Boot)
-Integrantes do Grupo
+ Integrantes do Grupo
 Kauê Pires Moreira — RM 554403
 Ricardo Di Tilia — RM 555155
 Eric Yuji Ito — RM 554869
 Higor Batista — RM 558907
 Bento Rangel da Silva — RM 559124
 
-Descrição do Projeto
+ Descrição do Projeto
 
 Este projeto consiste no desenvolvimento de uma API REST utilizando Spring Boot, com o objetivo de gerenciar pedidos.
 
@@ -16,45 +16,45 @@ Controller
 Service
 Repository
 Model
-Tecnologias Utilizadas
+ Tecnologias Utilizadas
 Java 21
 Spring Boot 3.5.14
 Spring Data JPA
 H2 Database (banco em memória)
 Maven
-Estrutura do Projeto
+ Estrutura do Projeto
 src/main/java/br/com/fiap/checkpoint2
 │
 ├── controller
 ├── service
 ├── repository
 └── model
-Funcionalidades
+ Funcionalidades
 
 A API possui os seguintes endpoints:
 
-Criar Pedido
+ Criar Pedido
 POST /pedidos
-Listar Todos os Pedidos
+ Listar Todos os Pedidos
 GET /pedidos
-Buscar Pedido por ID
+ Buscar Pedido por ID
 GET /pedidos/{id}
-Atualizar Pedido
+ Atualizar Pedido
 PUT /pedidos/{id}
-Deletar Pedido
+ Deletar Pedido
 DELETE /pedidos/{id}
-Exemplo de Requisição (POST)
+ Exemplo de Requisição (POST)
 {
-"clienteNome": "Kaue Pires",
-"valorTotal": 200.00
+  "clienteNome": "Kaue Pires",
+  "valorTotal": 200.00
 }
-Banco de Dados
+ Banco de Dados
 
 O projeto utiliza o H2 Database em memória.
 
-Acesso ao console:
+ Acesso ao console:
 http://localhost:8080/h2-console
-Configuração:
+ Configuração:
 JDBC URL: jdbc:h2:mem:pedidos-db
 User: sa
 Password: ()
@@ -66,12 +66,12 @@ Rodar a aplicação:
 mvn spring-boot:run
 A API estará disponível em:
 http://localhost:8080
-Observações
+ Observações
 O ID do pedido é gerado automaticamente.
 A data do pedido é preenchida automaticamente no momento da criação.
 O campo clienteNome é obrigatório.
 O valorTotal não pode ser negativo.
-Status
+ Status
 
 ✅ Projeto finalizado
 ✅ CRUD completo funcionando
